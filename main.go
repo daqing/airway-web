@@ -40,6 +40,10 @@ func main() {
 
 	r := app.Router()
 
+	r.Static("/assets", "./public/assets")
+
+	r.LoadHTMLGlob("app/views/**/*")
+
 	r.Use(cors.Default())
 
 	config.Routes(r)
