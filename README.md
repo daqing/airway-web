@@ -1,9 +1,7 @@
 About
 =====
 
-Airway is a full-stack API framework written in Go, inspired by Ruby on Rails.
-
-**[查看中文文档](https://github.com/daqing/airway/blob/main/docs/zh-CN/README.md)**
+`airway-web` is a full-stack Web framework written in Go, inspired by Ruby on Rails.
 
 Get Started
 ===========
@@ -13,7 +11,7 @@ Get Started
 Use `gonew` to create a new project based on `airway`:
 
 ```bash
-$ gonew github.com/daqing/airway example.com/foo/bar
+$ gonew github.com/daqing/airway-web example.com/foo/bar
 ```
 
 Replace `example.com/foo/bar` with your real module name.
@@ -32,19 +30,19 @@ This file defines a few environment variables:
 
 The URL string for connecting to PostgreSQL.
 
-Example: `postgres://daqing@localhost:5432/airway`
+Example: `postgres://daqing@localhost:5432/airway-web`
 
 **AIRWAY_PORT**
 
 The port to listen on.
 
-Example: `1900`
+Example: `1999`
 
 **AIRWAY_ROOT**
 
 The full path to current project directory.
 
-Example: `/Users/daqing/open-source/airway`
+Example: `/Users/daqing/open-source/airway-web`
 
 **TZ**
 
