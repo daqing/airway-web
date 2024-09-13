@@ -33,8 +33,11 @@ func main() {
 		gin.SetMode(gin.ReleaseMode)
 	}
 
-	orm.Setup()
-	app.AutoMigrate(orm.DB())
+	pgURL, err := utils.GetEnv("AIRWAY_PG_URL")
+	if err == nil && len(pgURL) > 0 {
+		orm.Setup()
+		app.AutoMigrate(orm.DB())
+	}
 
 	app := NewApp()
 
