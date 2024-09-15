@@ -7,4 +7,4 @@ install-deps:
   brew install overmind
 
 docker:
-  docker build -t airway .
+  docker build -t airway-web .

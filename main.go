@@ -44,6 +44,7 @@ func main() {
 	r := app.Router()
 
 	r.Static("/assets", "./public/assets")
+	r.Static("/stylesheets", "./public/stylesheets")
 
 	r.LoadHTMLGlob("app/views/**/*")
 

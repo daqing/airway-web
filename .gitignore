@@ -12,7 +12,6 @@
 
 *.sock
 
-/public/assets
-!/public/assets/.keep
+/public/stylesheets
 
 node_modules

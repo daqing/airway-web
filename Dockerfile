@@ -21,8 +21,11 @@ WORKDIR /airway
 
 RUN mkdir app
 RUN mkdir -p public/assets
+RUN mkdir -p public/stylesheets
 
-COPY --from=node-builder /node/application.css ./public/assets/application.css
+COPY --from=node-builder /node/application.css ./public/stylesheets/application.css
+COPY --from=node-builder /node/public/assets ./public/assets
+
 COPY --from=go-builder /go/bin/airway-web ./server
 COPY --from=go-builder /go/app/views ./app/views
 

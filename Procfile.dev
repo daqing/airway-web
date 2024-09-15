@@ -1,2 +1,2 @@
 web: AIRWAY_ENV=local air
-css: pnpx tailwindcss -i ./app/assets/stylesheets/application.css -o ./public/assets/application.css --watch
+css: pnpx tailwindcss -i ./app/assets/stylesheets/application.css -o ./public/stylesheets/application.css --watch
