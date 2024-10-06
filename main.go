@@ -45,6 +45,7 @@ func main() {
 
 	r.Static("/assets", "./public/assets")
 	r.Static("/stylesheets", "./public/stylesheets")
+	r.Static("/static", "./static")
 
 	r.LoadHTMLGlob("app/views/**/*")
 
